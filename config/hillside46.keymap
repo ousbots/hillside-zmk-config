@@ -32,13 +32,13 @@
 // |ESC  |  Q  |  W  |  E  |  R  |  T  |-------------------------|  Y  |  U  |  I  |  O  |  P  |  `  |
 // |TAB  |  A  |  S  |  D  |  F  |  G  |-------------------------|  H  |  J  |  K  |  L  |  ;  |  '  |
 // |CTRL |  Z  |  X  |  C  |  V  |  B  |SSHFT|-------------| CAPS|  N  |  M  |  ,  |  .  |  /  |  \  |
-//                         | GUI |BKSPC|ENTER| Nav ||| Sym |SPACE| GUI | ALT |
+//                         | GUI |ENTER|BKSPC| Nav ||| Sym |SPACE| GUI | ALT |
 
                         bindings = <
 &kp ESC    &kp Q  &kp W  &kp E  &kp R  &kp T                                                     &kp Y  &kp U  &kp I      &kp O    &kp P      &kp GRAVE
 &kp TAB    &kp A  &kp S  &kp D  &kp F  &kp G                                                     &kp H  &kp J  &kp K      &kp L    &kp SEMI   &kp SQT
 &kp LCTRL  &kp Z  &kp X  &kp C  &kp V  &kp B      &sk LSHFT                          &caps_word  &kp N  &kp M  &kp COMMA  &kp DOT  &kp SLASH  &kp BSLH
-                             &kp LGUI  &kp BSPC   &kp ENTER  &mo LFT_L    &mo RGT_L  &kp SPACE   &kp RGUI  &kp LALT
+                             &kp LGUI  &kp ENTER   &kp BSPC  &mo LFT_L    &mo RGT_L  &kp SPACE   &kp RGUI  &kp LALT
                         >;
                 };
 
@@ -48,13 +48,13 @@
 // |     | F1  | F2  | F3  | F4  | F5  |---------------------------|  6  |  7  |  8  |  9  |  0  |PG UP|
 // |     |     | Cut |Copy |Paste|PG UP|---------------------------|  ^  |  &  |  *  |     | Up  |PG DN|
 // |CTRL |     |     |     |     |PG DN| UnDo|---------------|ReDo |  }  |  )  |  ]  |Left |Down |Right|
-//                         |     |     |     |     |---|     |     |     |     |
+//                         | ALT | GUI |     |     |---|     |     | GUI | ALT |
 
                         bindings = <
 &none     &kp F1  &kp F2   &kp F3    &kp F4     &kp F5                              &kp N6     &kp N7    &kp N8    &kp N9    &kp N0    &kp PG_UP
 &none     &none   &kp Cut  &kp Copy  &kp Paste  &kp PG_UP                           &kp CARET  &kp AMPS  &kp STAR  &none     &kp UP    &kp PG_DN
 &kp LCTRL  &none   &none    &none     &none      &kp PG_DN   &kp Undo     &kp Redo   &kp RBRC   &kp RPAR  &kp RBKT  &kp LEFT  &kp DOWN  &kp RIGHT
-                        &none     &none      &none       &none        &none      &none      &none
+                            &kp LALT   &kp LGUI    &none       &none        &none      &none      &kp RGUI  &kp LALT
                         >;
                 };
 
@@ -64,13 +64,13 @@
 // |  |  |  1  |  2  |  3  |  4  |  5  |----------------------| F6  | F7  | F8  | F9  | F0  |  ~  |
 // |  +  |  !  |  @  |  #  |  $  |  %  |----------------------|HOME |     |     |     |     | END |
 // |  -  |  _  |  =  |  [  |  (  |  {  |     |----------|MENU |Mute |Vol- |Vol+ |Play |     |CTRL |
-//                       |     |     |     |     |--|     |     |     |     |
+//                       | ALT | GUI |     |     |--|     |     | GUI | ALT |
 
                         bindings = <
 &kp PIPE   &kp N1   &kp N2   &kp N3    &kp N4      &kp N5                        &kp F6      &kp F7      &kp F8     &kp F9    &kp F10    &kp TILDE
 &kp PLUS   &kp EXCL  &kp AT  &kp HASH  &kp DOLLAR  &kp PRCNT                     &kp HOME    &none       &none      &none     &none      &kp END
 &kp MINUS  &kp UNDER  &kp EQUAL  &kp LBKT  &kp LPAR &kp LBRC  &none       &none  &kp C_MUTE  &kp C_VOL_DN  &kp C_VOL_UP  &kp C_PP  &none  &kp RCTRL
-                                           &none  &none  &none  &none   &none  &none  &none  &none
+                                     &kp LALT  &kp LGUI  &none  &none   &none  &none  &kp RGUI  &kp LALT
                         >;
                 };
         };
