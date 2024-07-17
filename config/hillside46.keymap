@@ -31,14 +31,14 @@
 // ---------------------------------------------------------------------------------------------------
 // |ESC  |  Q  |  W  |  E  |  R  |  T  |-------------------------|  Y  |  U  |  I  |  O  |  P  |  `  |
 // |TAB  |  A  |  S  |  D  |  F  |  G  |-------------------------|  H  |  J  |  K  |  L  |  ;  |  '  |
-// |CTRL |  Z  |  X  |  C  |  V  |  B  |SSHFT|-------------| CAPS|  N  |  M  |  ,  |  .  |  /  |  \  |
-//                         | GUI |ENTER|BKSPC| Nav ||| Sym |SPACE| GUI | ALT |
+// |CTRL |  Z  |  X  |  C  |  V  |  B  |BKSPC|-------------|SSHFT|  N  |  M  |  ,  |  .  |  /  |  \  |
+//                         | ALT | GUI |ENTER| Nav ||| Sym |SPACE| GUI | ALT |
 
                         bindings = <
-&kp ESC    &kp Q  &kp W  &kp E  &kp R  &kp T                                                     &kp Y  &kp U  &kp I      &kp O    &kp P      &kp GRAVE
-&kp TAB    &kp A  &kp S  &kp D  &kp F  &kp G                                                     &kp H  &kp J  &kp K      &kp L    &kp SEMI   &kp SQT
-&kp LCTRL  &kp Z  &kp X  &kp C  &kp V  &kp B      &sk LSHFT                          &caps_word  &kp N  &kp M  &kp COMMA  &kp DOT  &kp SLASH  &kp BSLH
-                             &kp LGUI  &kp ENTER   &kp BSPC  &mo LFT_L    &mo RGT_L  &kp SPACE   &kp RGUI  &kp LALT
+&kp ESC    &kp Q  &kp W  &kp E  &kp R  &kp T                                               &kp Y  &kp U  &kp I      &kp O    &kp P      &kp GRAVE
+&kp TAB    &kp A  &kp S  &kp D  &kp F  &kp G                                               &kp H  &kp J  &kp K      &kp L    &kp SEMI   &kp SQT
+&kp LCTRL  &kp Z  &kp X  &kp C  &kp V  &kp B  &kp BSPC                         &sk LSHIFT  &kp N  &kp M  &kp COMMA  &kp DOT  &kp SLASH  &kp BSLH
+                        &kp LALT  &kp LGUI  &kp ENTER  &mo LFT_L    &mo RGT_L  &kp SPACE  &kp RGUI  &kp LALT
                         >;
                 };
 
