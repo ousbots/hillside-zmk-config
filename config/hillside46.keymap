@@ -46,14 +46,14 @@
 // -----------------------------------------------------------------------------------------------------
 // |     |  1  |  2  |  3  |  4  |  5  |---------------------------|  6  |  7  |  8  |  9  |  0  |     |
 // |     |  !  |  @  |  #  |  $  |  %  |---------------------------|  ^  |  &  |  *  |  _  |  =  |     |
-// |SHIFT|     |     |  [  |  (  |  {  | UnDo|---------------|ReDo |  }  |  )  |  ]  |  -  |  +  |SHIFT|
+// |SHIFT|     |     |  [  |  (  |  {  |     |---------------|BKSPC|  }  |  )  |  ]  |  -  |  +  |SHIFT|
 //                         |CTRL | GUI | ALT |     |---|     |CTRL | GUI | ALT |
 
                 left_layer {
                         bindings = <
 &none     &kp N1   &kp N2  &kp N3    &kp N4      &kp N5                       &kp N6     &kp N7    &kp N8    &kp N9     &kp N0  &none
 &none     &kp EXCL &kp AT  &kp HASH  &kp DOLLAR  &kp PRCNT                    &kp CARET  &kp AMPS  &kp STAR  &kp UNDER  &kp EQUAL  &none
-&kp LSHIFT  &none  &none  &kp LBKT  &kp LPAR  &kp LBRC  &kp Undo      &kp Redo  &kp RBRC   &kp RPAR  &kp RBKT  &kp MINUS  &kp PLUS &kp RSHIFT
+&kp LSHIFT  &none  &none  &kp LBKT  &kp LPAR  &kp LBRC  &none      &kp BSPC  &kp RBRC   &kp RPAR  &kp RBKT  &kp MINUS  &kp PLUS &kp RSHIFT
                               &kp LCTRL  &kp LGUI  &kp LALT  &none   &none  &kp RCTRL  &kp RGUI  &kp RALT
                         >;
                 };
