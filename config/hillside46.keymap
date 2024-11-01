@@ -69,7 +69,7 @@
                         bindings = <
 &none  &kp F1  &kp F2  &kp F3  &kp F4  &kp F5                    &kp F6    &kp F7    &kp F8    &kp F9   &kp F10        &none
 &none  &none   &none   &none   &none   &none                     &kp PGUP  &kp HOME  &kp UP    &kp END  &kp C_VOL_UP   &kp C_MUTE
-&none  &none   &none   &none   &none   &none  &none       &none  &kp PGDN  &kp LEFT  &kp DOWN  &kp UP   &kp C_VOL_DN   &kp C_PP
+&none  &none   &none   &none   &none   &none  &none       &none  &kp PGDN  &kp LEFT  &kp DOWN  &kp RIGHT  &kp C_VOL_DN  &kp C_PP
                   &kp LCTRL  &kp LGUI  &kp LALT  &none   &none  &kp RCTL   &kp RGUI  &kp RALT
                         >;
                 };
