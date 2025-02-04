@@ -24,7 +24,7 @@
 
 / {
         keymap {
-                compatible = "zmk,keymap";
+                compatible = "zmk,keymap,kscan-gpio-matrix";
                 wakeup-source;
 
 // QWERTY
